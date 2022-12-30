@@ -1,0 +1,189 @@
+/* ---fonts--- */
+@import url(//db.onlinewebfonts.com/c/a93b779e76d94bd2533cb63dcfce55a2?family=Homenaje);
+
+/* ---global styles--- */
+:root {
+	--dark: #09062e;
+	--light: wheat;
+	--curve: 0.5rem;
+	--thick: 0.3rem;
+	--dark-text: #16181b;
+	--shadow: 0 0 0.1em var(--dark-text), 0 0 0.1em var(--dark-text),
+		0 0 0.1em var(--dark-text), 0 0 0.1em var(--dark-text),
+		0 0 0.1em var(--dark-text), 0 0 0.1em var(--dark-text),
+		0 0 0.1em var(--dark-text), 0 0 0.1em var(--dark-text),
+		0 0 0.1em var(--dark-text), 0 0 0.1em var(--dark-text);
+}
+
+* {
+	/* box-sizing: border-box; => padding + border included in width & height */
+	box-sizing: border-box;
+	font-family: "Homenaje";
+	color: var(--light) !important;
+}
+
+html {
+	/* Converts root from 16px to 10px */
+	font-size: 62.5%;
+}
+
+body {
+	/* 1rem = 10px => sets body default to 16px for legibility */
+	font-size: 1.6rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	font-size: 5rem;
+}
+
+h2 {
+	font-size: 4rem;
+}
+
+h3 {
+	font-size: 3rem;
+}
+
+h4 {
+	font-size: 2rem;
+}
+
+p {
+	color: var(--dark);
+	font-size: 2rem;
+}
+
+/* ---nav styles--- */
+.customNav {
+	position: fixed;
+	min-width: 100%;
+	min-height: 15vh;
+	background: url("../images/transparency.png");
+	background-size: cover;
+	z-index: 10;
+}
+
+.nav-brand-name,
+.nav-link h3 {
+	color: var(--light) !important;
+	text-shadow: var(--shadow);
+}
+
+.navbar-nav {
+	margin-left: auto;
+	margin-right: 0;
+}
+
+.navbar-brand {
+	display: flex;
+	padding-right: 1.5em;
+	min-width: 6.5rem;
+	align-items: center;
+	gap: 1em;
+}
+
+.nav-brand-name,
+#at {
+	font-family: "Pacifico";
+}
+
+#at {
+	opacity: 0.7;
+}
+
+.nav-item {
+	margin: 0.1em 0.3em;
+	padding-left: 0.3em;
+	border-right: var(--thick) solid var(--light);
+	border-radius: 15px 0 0 15px;
+}
+.nav-item:hover {
+	background: linear-gradient(to left, wheat 50%, transparent 50%) right;
+	background-size: 200% 100%;
+	color: var(--dark);
+	transition: all 0.5s;
+}
+
+.navbar-toggler-icon {
+	width: 3em;
+	height: 3em;
+}
+
+/* shift rest of page to align with navbar */
+.content-container {
+	position: relative;
+	top: 15vh;
+}
+
+/* ---s1: jumbotron */
+.jumbotron {
+	min-height: 85vh;
+	padding: 4rem;
+
+	background: linear-gradient(
+			360deg,
+			black 0.1%,
+			rgba(26, 26, 26, 0.886317) 10.58%,
+			rgba(26, 26, 26, 0.886317) 10.58%,
+			rgba(26, 26, 26, 0.886317) 10.58%,
+			rgba(26, 26, 26, 0.65) 25.45%,
+			rgba(26, 26, 26, 0.3) 100%
+		),
+		url(../images/bg.png);
+	background-size: cover;
+	background-position: center;
+
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: 3em;
+	text-align: center;
+}
+
+#profile-pic {
+	/* box-shadow: var(--shadow); */
+	box-shadow: 0 0 10px var(--light);
+	border-radius: 15px;
+	max-width: 25vw;
+	max-height: 85vh;
+}
+
+.hero-right {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1.5em;
+}
+
+.hero-text {
+	font-family: "Pacifico";
+	text-shadow: var(--shadow);
+}
+
+.hero-btn {
+	margin: 0 0.3em;
+	font-size: 1.5em;
+	text-shadow: var(--shadow);
+	background: var(--dark);
+	border: 1px solid var(--light);
+	border-radius: 15px;
+}
+.hero-btn:hover,
+.hero-btn:focus {
+	box-shadow: 0 0 0.5em var(--light);
+	background: url(../images/transparency.png);
+	border: 1px solid var(--light);
+}
