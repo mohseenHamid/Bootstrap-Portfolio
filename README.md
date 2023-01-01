@@ -49,7 +49,7 @@ Please see below screenshots of the webpage:
 
 The following link takes you to the GitHub Pages deployment of the website:
 
-- https://mohseenhamid.github.io/tsbc-challenge-3-mh/
+- https://mohseenhamid.github.io/Bootstrap-Portfolio/
 
 ## License
 
