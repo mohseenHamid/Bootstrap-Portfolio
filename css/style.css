@@ -1,5 +1,6 @@
 /* ---fonts--- */
 @import url(//db.onlinewebfonts.com/c/a93b779e76d94bd2533cb63dcfce55a2?family=Homenaje);
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
 
 /* ---global styles--- */
 :root {
@@ -19,7 +20,6 @@
 	/* box-sizing: border-box; => padding + border included in width & height */
 	box-sizing: border-box;
 	font-family: "Homenaje";
-	color: var(--light) !important;
 }
 
 html {
@@ -30,6 +30,7 @@ html {
 body {
 	/* 1rem = 10px => sets body default to 16px for legibility */
 	font-size: 1.6rem;
+	color: var(--light) !important;
 }
 
 h1,
@@ -61,17 +62,18 @@ h4 {
 
 p {
 	color: var(--dark);
-	font-size: 2rem;
+	font-size: 1.5em;
 }
 
 /* ---nav styles--- */
-.customNav {
-	position: fixed;
+.customNav,
+footer {
 	min-width: 100%;
-	min-height: 15vh;
+	min-height: 10vh;
 	background: url("../images/transparency.png");
 	background-size: cover;
-	z-index: 10;
+	padding-left: 3rem;
+	padding-right: 3rem;
 }
 
 .nav-brand-name,
@@ -104,7 +106,7 @@ p {
 
 .nav-item {
 	margin: 0.1em 0.3em;
-	padding-left: 0.3em;
+	padding: 0 0.2em 0 0.5rem;
 	border-right: var(--thick) solid var(--light);
 	border-radius: 15px 0 0 15px;
 }
@@ -120,16 +122,11 @@ p {
 	height: 3em;
 }
 
-/* shift rest of page to align with navbar */
-.content-container {
-	position: relative;
-	top: 15vh;
-}
-
 /* ---s1: jumbotron */
 .jumbotron {
-	min-height: 85vh;
-	padding: 4rem;
+	min-height: 90vh;
+	margin-bottom: 0;
+	padding: calc(10vh + 4rem) 4rem 4rem 4rem;
 
 	background: linear-gradient(
 			360deg,
@@ -153,7 +150,6 @@ p {
 }
 
 #profile-pic {
-	/* box-shadow: var(--shadow); */
 	box-shadow: 0 0 10px var(--light);
 	border-radius: 15px;
 	max-width: 25vw;
@@ -174,7 +170,7 @@ p {
 }
 
 .hero-btn {
-	margin: 0 0.3em;
+	margin: 0.3em 0.3em;
 	font-size: 1.5em;
 	text-shadow: var(--shadow);
 	background: var(--dark);
@@ -186,4 +182,221 @@ p {
 	box-shadow: 0 0 0.5em var(--light);
 	background: url(../images/transparency.png);
 	border: 1px solid var(--light);
+	color: var(--light);
 }
+
+/* ---s2--- */
+#s2 {
+	background: var(--light);
+}
+
+.row {
+	margin: 0 !important;
+}
+
+.grid-container {
+	padding: 3rem;
+}
+
+.aside-container {
+	min-width: 20ch;
+	color: var(--dark) !important;
+	border-right: var(--thick) solid var(--dark);
+	text-align: right;
+}
+.aside-container h3 {
+	font-family: "Pacifico" !important;
+}
+
+.my-4 {
+	border: 0.01em solid var(--dark);
+	border-radius: 100px;
+	opacity: 0.5;
+}
+
+/* about me */
+#r1 {
+	margin-bottom: 1em;
+}
+
+#about-text-container p {
+	text-align: justify;
+	padding: 0.5rem;
+}
+
+/* project tiles */
+#projects-tiles-container,
+#about-text-container {
+	padding-right: 0;
+}
+
+.cards-col {
+	display: flex;
+	flex-wrap: wrap;
+}
+/* generic card styles */
+.cardContainer {
+	padding: 0;
+}
+
+.tile-wrap {
+	margin: 0.5rem;
+}
+
+.card {
+	min-height: 20vh;
+	background: grey;
+	color: var(--light);
+	opacity: 0.5;
+	border: var(--thick) solid var(--dark);
+	border-radius: 15px;
+
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-end;
+	text-decoration: none;
+	transition: all 0.5s;
+}
+.card:hover {
+	background-image: url("../images/bg.png");
+	background-position: center;
+	background-size: cover;
+	transition: all 0.5s;
+	opacity: 1;
+	text-decoration: none;
+	color: var(--light);
+}
+.card div {
+	background: var(--dark);
+	padding: 8px 10px;
+	border-radius: 0 var(--curve) var(--curve) 0;
+	margin-bottom: 1rem;
+}
+.card:hover div {
+	background: url(../images/transparency.png);
+}
+
+/* large tile styles */
+#large-tile {
+	min-height: 30vh;
+}
+#large-tile:hover {
+	background-image: url("https://www.hdwallpapers.in/download/purple_planet_and_purple_space_hd_purple-1920x1080.jpg");
+}
+
+/* ---footer--- */
+/* 
+src: https://www.codingnepalweb.com/social-media-buttons-with-tooltip-on-hover/
+adapted code structure + styled bg color 
+*/
+.wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.wrapper .icon {
+	margin: 0 1rem;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	position: relative;
+	z-index: 2;
+	transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .icon span {
+	display: block;
+	height: 60px;
+	width: 60px;
+	background: #fff;
+	border-radius: 50%;
+	position: relative;
+	z-index: 2;
+	box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+	transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .icon span i {
+	line-height: 60px;
+	font-size: 25px;
+}
+.wrapper .icon .tooltip {
+	position: absolute;
+	top: 0;
+	z-index: 1;
+	background: #fff;
+	color: #fff;
+	padding: 10px 18px;
+	font-size: 20px;
+	font-weight: 500;
+	border-radius: 25px;
+	opacity: 0;
+	box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+	transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	font-family: "Poppins", sans-serif;
+}
+.wrapper .icon:hover .tooltip {
+	top: -70px;
+	opacity: 1;
+}
+.icon .tooltip:before {
+	position: absolute;
+	content: "";
+	height: 15px;
+	width: 15px;
+	background: #fff;
+	left: 50%;
+	bottom: -6px;
+	transform: translateX(-50%) rotate(45deg);
+	transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .icon:hover span {
+	color: #fff;
+}
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+	text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
+}
+
+.wrapper .github span,
+.wrapper .linkedin span {
+	background: var(--dark);
+	opacity: 0.5;
+}
+
+.wrapper .github:hover span,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip:before {
+	background: #333;
+	opacity: 1;
+}
+
+.wrapper .linkedin:hover span,
+.wrapper .linkedin:hover .tooltip,
+.wrapper .linkedin:hover .tooltip:before {
+	background: #0072b1;
+	opacity: 1;
+}
+
+/* .wrapper .facebook:hover span,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip:before {
+	background: #3b5999;
+}
+.wrapper .twitter:hover span,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip:before {
+	background: #46c1f6;
+}
+.wrapper .instagram:hover span,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip:before {
+	background: #e1306c;
+}
+.wrapper .youtube:hover span,
+.wrapper .youtube:hover .tooltip,
+.wrapper .youtube:hover .tooltip:before {
+	background: #de463b;
+}
+ */
