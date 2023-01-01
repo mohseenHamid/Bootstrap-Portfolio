@@ -11,19 +11,20 @@ AS A front-end developer
 I WANT to build a webpage using the CSS Bootstrap frameworks
 SO THAT I can save time by utilising existing designs
 ```
+
 ## Acceptance Criteria
 
 1. The website should include the following bootstrap components:
-    - A Navigation bar
-    - A hero section (jumbotron featuring picture and name)
-    - A work section using Bootstrap grid layout 
-      - Use bootstrap cards for each project
-        - The description should give a brief overview of the work
-    - An about / contact section
-      - An "About Me" section in the same row
-    - A footer section
-      - All hyperlinks should have a hover effect
-      - All buttons should display a box shadow upon hover
+   - A Navigation bar
+   - A hero section (jumbotron featuring picture and name)
+   - A work section using Bootstrap grid layout
+     - Use bootstrap cards for each project
+       - The description should give a brief overview of the work
+   - An about / contact section
+     - An "About Me" section in the same row
+   - A footer section
+     - All hyperlinks should have a hover effect
+     - All buttons should display a box shadow upon hover
 2. The Bootstrap solution should minimize use of media queries
 
 ## Usage
