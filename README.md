@@ -29,22 +29,22 @@ SO THAT I can save time by utilising existing designs
 
 ## Usage
 
-This is a static webpage that contains a navigation bar in the header. Click the links to go to the content sections of the page. In the "My Work" section, click on the tiles to be taken to the respective project's GitHub repo.
+This is a static webpage that contains a navigation bar in the header. Click the links to go to the content sections of the page. In the "Projects" section, click on the cards to be taken to the respective project's GitHub repo.
 
 ## Mock-Up
 
 This portfolio webpage includes:
 
 - a header containing a page title + navigation bar
-- a hero banner
-- a main body containing 2 sections
+- a hero jumbotron
+- a main body in grid layout displaying 2 sections
   1. About Me: a brief professional biography
-  2. My Work: a tiled layout of my projects (that can be clicked)
-- a footer containing contact info
+  2. Projects: a Bootstrap Card collection of my projects (that can be clicked)
+- a footer containing social media icons
 
 ### Webpage
 
-Please see below screenshots of the webpage:
+Please see below a screenshot of the webpage:
 
 ![portfolio full-size webpage screenshot](./images/portfolio-screenshot-full.png)
 
