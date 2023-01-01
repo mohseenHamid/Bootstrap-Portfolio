@@ -11,7 +11,6 @@ AS A front-end developer
 I WANT to build a webpage using the CSS Bootstrap frameworks
 SO THAT I can save time by utilising existing designs
 ```
-
 ## Acceptance Criteria
 
 1. The website should include the following bootstrap components:
