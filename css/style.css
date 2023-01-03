@@ -142,26 +142,31 @@ footer {
 	background-position: center;
 
 	display: flex;
-	flex-direction: row;
 	align-items: center;
-	justify-content: center;
-	gap: 3em;
 	text-align: center;
 }
 
 #profile-pic {
 	box-shadow: 0 0 10px var(--light);
 	border-radius: 15px;
-	max-width: 25vw;
+	max-width: 100%;
 	max-height: 85vh;
+}
+
+.hero-left {
+	display: flex;
+	justify-content: center;
+	margin: 0;
 }
 
 .hero-right {
 	display: flex;
 	flex-direction: column;
+	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
 	gap: 1.5em;
+	padding-right: 10%;
 }
 
 .hero-text {
@@ -406,8 +411,12 @@ adapted code structure + styled bg color
  */
 
 @media (max-width: 992px) {
-	.card {
-		flex: 1;
+	.hero-left {
+		margin-bottom: 1.5em;
+	}
+
+	.hero-right {
+		padding: 0;
 	}
 
 	#about-title-container,
@@ -422,5 +431,9 @@ adapted code structure + styled bg color
 		text-align: center;
 		padding: 0 0 1rem 0;
 		margin: 0 0 1rem 0;
+	}
+
+	.card {
+		flex: 1;
 	}
 }
