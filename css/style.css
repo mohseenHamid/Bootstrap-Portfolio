@@ -221,7 +221,7 @@ footer {
 
 #about-text-container p {
 	text-align: justify;
-	padding: 0.5rem;
+	padding: 0 0.5rem;
 }
 
 /* project tiles */
@@ -261,7 +261,7 @@ footer {
 	background-image: url("../images/bg.png");
 	background-position: center;
 	background-size: cover;
-	transition: all 0.5s;
+	transition: all 1s;
 	opacity: 1;
 	text-decoration: none;
 	color: var(--light);
@@ -282,6 +282,10 @@ footer {
 }
 #large-tile:hover {
 	background-image: url("https://www.hdwallpapers.in/download/purple_planet_and_purple_space_hd_purple-1920x1080.jpg");
+}
+
+#css-cheat-sheet-tile:hover {
+	background-image: url("../images/css-cheat-sheet-mobile.png");
 }
 
 /* ---footer--- */
@@ -400,3 +404,23 @@ adapted code structure + styled bg color
 	background: #de463b;
 }
  */
+
+@media (max-width: 992px) {
+	.card {
+		flex: 1;
+	}
+
+	#about-title-container,
+	#about-text-container,
+	#projects-tiles-container {
+		padding-left: 0;
+	}
+
+	.aside-container {
+		border-right: none;
+		border-bottom: var(--thick) solid var(--dark);
+		text-align: center;
+		padding: 0 0 1rem 0;
+		margin: 0 0 1rem 0;
+	}
+}
