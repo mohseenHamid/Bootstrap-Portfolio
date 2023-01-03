@@ -47,10 +47,12 @@ This portfolio webpage includes:
 Please see below screenshots of the webpage:
 
 - 432px:
-  ![portfolio 432px webpage screenshot](./images/portfolio-screenshot-432px.png)
+
+![portfolio 432px webpage screenshot](./images/portfolio-screenshot-432px.png)
 
 - 931px:
-  ![portfolio 931px webpage screenshot](./images/portfolio-screenshot-991px.png)
+
+![portfolio 931px webpage screenshot](./images/portfolio-screenshot-991px.png)
 
 - Full-Size:
 
