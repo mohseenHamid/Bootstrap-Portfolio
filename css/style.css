@@ -92,7 +92,6 @@ footer {
 	padding-right: 1.5em;
 	min-width: 6.5rem;
 	align-items: center;
-	gap: 1em;
 }
 
 .nav-brand-name,
@@ -418,6 +417,15 @@ adapted code structure + styled bg color
 		flex-direction: column;
 		gap: 5px;
 		padding: 1rem;
+	}
+
+	.navbar-brand {
+		padding-right: 0;
+		margin-right: 0;
+	}
+
+	.navbar-collapse {
+		width: 25ch;
 	}
 
 	.jumbotron {
