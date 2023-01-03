@@ -46,7 +46,7 @@ This portfolio webpage includes:
 
 Please see below screenshots of the webpage:
 
-- 432px:
+- 431px:
 
 ![portfolio 431px webpage screenshot](./images/portfolio-screenshot-431px.png)
 
