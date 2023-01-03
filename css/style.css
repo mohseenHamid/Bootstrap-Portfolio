@@ -410,6 +410,22 @@ adapted code structure + styled bg color
 }
  */
 
+/* ---media queries--- */
+/* nav-bar toggle alignment */
+@media (max-width: 432px) {
+	.customNav {
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
+		padding: 1rem;
+	}
+
+	.jumbotron {
+		padding: calc(20vh + 4rem) 4rem 4rem 4rem;
+	}
+}
+
+/* paddings/alignments */
 @media (max-width: 992px) {
 	.hero-left {
 		margin-bottom: 1.5em;

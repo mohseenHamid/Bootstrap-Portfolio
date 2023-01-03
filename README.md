@@ -44,7 +44,15 @@ This portfolio webpage includes:
 
 ### Webpage
 
-Please see below a screenshot of the webpage:
+Please see below screenshots of the webpage:
+
+- 432px:
+  ![portfolio 432px webpage screenshot](./images/portfolio-screenshot-432px.png)
+
+- 931px:
+  ![portfolio 931px webpage screenshot](./images/portfolio-screenshot-991px.png)
+
+- Full-Size:
 
 ![portfolio full-size webpage screenshot](./images/portfolio-screenshot-full.png)
 
