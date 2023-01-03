@@ -48,7 +48,7 @@ Please see below screenshots of the webpage:
 
 - 432px:
 
-![portfolio 432px webpage screenshot](./images/portfolio-screenshot-432px.png)
+![portfolio 431px webpage screenshot](./images/portfolio-screenshot-431px.png)
 
 - 931px:
 

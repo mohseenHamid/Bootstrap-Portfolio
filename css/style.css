@@ -152,20 +152,20 @@ footer {
 	max-height: 85vh;
 }
 
-.hero-left {
+.hero-right {
 	display: flex;
 	justify-content: center;
 	margin: 0;
 }
 
-.hero-right {
+.hero-left {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
 	gap: 1.5em;
-	padding-right: 10%;
+	padding-left: 5%;
 }
 
 .hero-text {
@@ -435,11 +435,11 @@ adapted code structure + styled bg color
 
 /* paddings/alignments */
 @media (max-width: 992px) {
-	.hero-left {
+	.hero-right {
 		margin-bottom: 1.5em;
 	}
 
-	.hero-right {
+	.hero-left {
 		padding: 0;
 	}
 
