@@ -441,6 +441,7 @@ adapted code structure + styled bg color
 
 	.hero-left {
 		padding: 0;
+		margin-bottom: 1.5em;
 	}
 
 	#about-title-container,
