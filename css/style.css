@@ -280,7 +280,7 @@ footer {
 	background: url(../images/transparency.png);
 }
 
-/* large tile styles */
+/* project tile styles */
 #large-tile {
 	min-height: 30vh;
 }
@@ -288,9 +288,14 @@ footer {
 	/* background-image: url("../images/planet-bg.png"); */
 	background-image: url("../images/purple-planet.png");
 }
-
 #css-cheat-sheet-tile:hover {
 	background-image: url("../images/css-cheat-sheet-mobile.png");
+}
+#travel-california-tile:hover {
+	background-image: url("../images/travel-california-bg-img.svg");
+}
+#rps-tile:hover {
+	background-image: url("../images/RPS-example.png");
 }
 
 /* ---footer--- */
