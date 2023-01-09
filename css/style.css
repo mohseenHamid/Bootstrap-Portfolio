@@ -72,8 +72,7 @@ footer {
 	min-height: 10vh;
 	background: url("../images/transparency.png");
 	background-size: cover;
-	padding-left: 3rem;
-	padding-right: 3rem;
+	padding: 1rem 3rem;
 }
 
 .nav-brand-name,
@@ -195,7 +194,7 @@ footer {
 }
 
 .row {
-	margin: 0 !important;
+	margin: 0 !important; /* offsets the bootstrap row -ve margins */
 }
 
 .grid-container {
@@ -241,7 +240,7 @@ footer {
 }
 
 .card {
-	min-height: 20vh;
+	min-height: 20rem;
 	background: grey;
 	color: var(--light);
 	opacity: 0.5;
@@ -275,7 +274,7 @@ footer {
 
 /* project tile styles */
 #large-tile {
-	min-height: 30vh;
+	min-height: 30rem;
 }
 #large-tile:hover {
 	/* background-image: url("../images/planet-bg.png"); */
@@ -296,10 +295,11 @@ footer {
 src: https://www.codingnepalweb.com/social-media-buttons-with-tooltip-on-hover/
 adapted code structure + styled bg color 
 */
-#contact {
+footer {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	padding: 1rem;
 }
 
 .wrapper {
