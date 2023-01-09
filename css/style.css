@@ -303,20 +303,25 @@ footer {
 src: https://www.codingnepalweb.com/social-media-buttons-with-tooltip-on-hover/
 adapted code structure + styled bg color 
 */
-.wrapper {
+#contact {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
+.wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 .wrapper .icon {
+	position: relative;
 	margin: 0 1rem;
 	text-align: center;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	position: relative;
 	z-index: 2;
 	transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
@@ -324,16 +329,19 @@ adapted code structure + styled bg color
 	display: block;
 	height: 60px;
 	width: 60px;
-	background: #fff;
 	border-radius: 50%;
 	position: relative;
 	z-index: 2;
 	box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
 	transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+	background: var(--dark);
+	opacity: 0.5;
 }
 .wrapper .icon span i {
 	line-height: 60px;
 	font-size: 25px;
+	color: var(--light);
 }
 .wrapper .icon .tooltip {
 	position: absolute;
@@ -365,18 +373,12 @@ adapted code structure + styled bg color
 	transform: translateX(-50%) rotate(45deg);
 	transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-.wrapper .icon:hover span {
+.wrapper .icon:hover span i {
 	color: #fff;
 }
 .wrapper .icon:hover span,
 .wrapper .icon:hover .tooltip {
 	text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
-}
-
-.wrapper .github span,
-.wrapper .linkedin span {
-	background: var(--dark);
-	opacity: 0.5;
 }
 
 .wrapper .github:hover span,
